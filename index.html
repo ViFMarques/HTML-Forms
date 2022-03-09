@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/ppay-icon.webp">
+    
+    <title>Cadastro Show do Milhão</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Show do Mihão Pic Pay</h1> <br>
+        <p id="subtitulo">Complete com suas informações</p>
+        <br>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="seu nome"><strong>Seu nome:</strong></label>
+                <input type="text" name="Seu nome" id="Seu nome" required>
+            </div>
+            <div class="campo">
+                <label for="seu sobrenome"> <strong> Seu sobrenome:</strong></label>
+                <input type="text"name="Seu sobrenome" id="Seu sobrenome" required>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <label for="email"> <strong>E-mail:</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="campo">
+            <label><strong> Com qual genêro você mais se identifica?</strong></label><br>
+            <label> 
+                <input type="radio" name="web" value="feminino"> Feminino
+            </label> <br>
+            <label>
+                <input type="radio" name="web" value="masculino"> Masculino
+            </label><br>
+            <label>
+                <input type="radio" name="web" value="Ambos"> Ambos
+            </label><br>
+            <label>
+                <input type="radio" name="web" value="nd"> Prefiro não declarar
+            </label><br><br>
+         </div>
+         <div class="campo">
+             <label for="estados"><strong>Seu estado</strong></label>
+         <select id="estados" required>
+             <option selected disabled value="">Selecione UF</option>
+             <option>RO</option>
+             <option>AC</option>
+             <option>AM</option>
+             <option>RR</option>
+             <option>PA</option>
+             <option>AP</option>
+             <option>TO</option>
+             <option>MA</option>
+             <option>PI</option>
+             <option>CE</option>
+             <option>RN</option>
+             <option>PB</option>
+             <option>PE</option>
+             <option>AL</option>
+             <option>SE</option>
+             <option>BA</option>
+             <option>MG</option>
+             <option>ES</option>
+             <option>RJ</option>
+             <option>SP</option>
+             <option>PR</option>
+             <option>SC</option>
+             <option>RS</option>
+             <option>MS</option>
+             <option>MT</option>
+             <option>GO</option>
+             <option>DF</option>
+         </select>
+         </div>
+         <fieldset class="grupo">
+             <div id="check">
+                 <label><strong>Selecione os meses que você tem disponibilidade para participar da gravação do programa:</strong></label> <br><br> 
+                 <input type="checkbox" id="mes3e4" value="março ou abril">
+                 <label for="mes3e4">março e abril</label>
+                 <input type="checkbox" id="mes5e6" value="maio e junho">
+                 <label for="mes5e6">maio e junho</label>
+                 <input type="checkbox" id="mes7e8" value="julho e agosto">
+                 <label for="mes7e8">julho e agosto</label>
+                 <input type="checkbox" id="mes9e10" value="setembro e outubro">
+                 <label for="mes9e10">setembro e outubro</label>
+                 <input type="checkbox" id="mes11e12" value="novembro e dezembro">
+                 <label for="mes11e12">novembro e dezembro</label>
+             </div>
+         </fieldset>
+         <div class="campo">
+             <br>
+             <label for="conte-nos"><strong>Conte-nos porque deveriamos selecionar você para participar do SHOW DO MILHÃO PIC PAY:</strong></label> <br>
+             <textarea rows="6" style="width: 26em;" name="conte-nos" id="conte-nos" ></textarea>
+             <button class="botao" type="submit" onsubmit="">Enviar</button>
+         </div> 
+    </form>  
+</body>
+</html>
